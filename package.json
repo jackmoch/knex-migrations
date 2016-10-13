@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/jackmoch/knex-migrations#readme",
   "dependencies": {
-    "knex": "^0.12.5"
+    "knex": "^0.12.5",
+    "sqlite3": "^3.1.6"
   }
 }
