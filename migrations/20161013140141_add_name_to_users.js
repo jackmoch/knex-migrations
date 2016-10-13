@@ -1,8 +1,15 @@
+'use strict';
 
-exports.up = function(knex, Promise) {
-  
+const knex = require('knex')
+
+module.exports.up = (knex, Promise) => {
+  return knex.schema.table('Users', (table) => {
+  	table.string('Name')
+  })
 };
 
-exports.down = function(knex, Promise) {
-  
+module.exports.down = (knex, Promise) => {
+  return knex.table('Users', (table) => {
+  	table.dropColumn('Name')
+  })
 };
